@@ -19,7 +19,7 @@
 ### For Of Loop
 
 ```
-let cars = [new Car(), new Car()];
+let cars : Array<Car> = new Array<Car>;
 
 for (let c of cars) {
    console.log("car position is " + c.x);
