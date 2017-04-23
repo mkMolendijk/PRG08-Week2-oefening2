@@ -13,12 +13,6 @@
 - Zodra een auto een rots raakt gaat je totaalscore naar 0
 - Auto's mogen elkaar wel raken. Rotsen mogen elkaar wel raken.
 
-## Bonus opdracht
-
-- Je kan de hele game resetten door de game instance te verwijderen en een nieuwe te maken. Je kan daar een aparte functie voor schrijven.
-- Alle instances en settings staan dan automatisch weer op de begin stand.
-- Je moet wel de oude divs van de cars en rocks uit de DOM verwijderen, voordat je een nieuwe game instance aanmaakt.
-
 ## Voorbeeldcode
 
 ### For Of Loop
@@ -30,3 +24,20 @@ for (let c of cars) {
    console.log("car position is " + c.x);
 }
 ```
+
+### Click Listener
+
+```
+class Test {
+    constructor(){
+        let div = document.createElement("div");
+        document.body.appendChild(div);
+
+        div.addEventListener("click", (e:MouseEvent) => this.onClick(e));
+    }
+    private onClick(e:MouseEvent):void {
+        console.log("Clicked!");
+    }
+}
+```
+
