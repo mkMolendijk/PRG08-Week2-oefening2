@@ -9,6 +9,7 @@
 - Gebruik Arrays in Game.ts om de cars en rocks in op te slaan.
 - Als je op een auto klikt gaat de auto afremmen.
 - Zodra een auto stil staat zonder te botsen met een rots, krijg je een aantal punten dat gelijk is aan de x positie van de auto
+- De rots heeft geen speed en hoeft niet meer te bewegen bij een botsing.
 - De game loop checkt of er een auto is die botst met een rots
 - Zodra een auto een rots raakt gaat je totaalscore naar 0
 - Auto's mogen elkaar wel raken. Rotsen mogen elkaar wel raken.
