@@ -15,8 +15,22 @@ class Game {
         this.container = document.getElementById("container");
 
 
-        this.car = new Car(this.container);
-        this.rock = new Rock(this.container);
+        // this.car = new Car(this.container);
+        let cars : Array<Car> = new Array<Car>();
+        cars.push(new Car(this.container));
+        
+        for (let c of cars) {
+           console.log("car position is " + c.x);
+        }
+
+        // this.rock = new Rock(this.container);
+        let rocks : Array<Rock> = new Array<Rock>();
+        rocks.push(new Rock(this.container));
+
+        for (let r of rocks) {
+            console.log("rock position is " + r.x);
+        }
+
         this.scoreCalculated = false;
         this.score = 0;
 

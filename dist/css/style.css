@@ -15,7 +15,7 @@ body * {
 }
 
 container {
-    background-image: url(../images/background.png);
+    background-image: url(../images/road.png);
     background-repeat: no-repeat;
     width:800px; height:600px;
     left: 50%; top: 50%;
