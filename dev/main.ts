@@ -28,7 +28,6 @@ class Game {
         this.rock.move();
 
         if (Utils.checkCollision(this.car, this.rock)) {
-
                console.log("Biem");
                this.rock.setSpeed(5);
                this.car.setSpeed(0);
