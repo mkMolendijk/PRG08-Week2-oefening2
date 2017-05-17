@@ -7,7 +7,7 @@ class Wheel extends GameObject {
     // private y:number;
     // private div:HTMLElement;
 
-    constructor(parent: HTMLElement, x: number, y:number) {
-        super("wheel", parent, x, y);
+    constructor(parent: HTMLElement, x: number, y: number, width: number, height: number) {
+        super("wheel", parent, x, y, width, height);
     }
 }
