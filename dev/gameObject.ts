@@ -1,6 +1,6 @@
 class GameObject {
 
-    protected div: HTMLElement;
+    public div: HTMLElement;
     protected x: number;
     protected y: number;
 
@@ -8,8 +8,7 @@ class GameObject {
     protected height: number;
 
     constructor(str: string, parent: HTMLElement, x: number, y: number, width: number, height: number) {
-        // let container:HTMLElement = document.getElementById(parent);
-        
+
         this.div = document.createElement(str);
         parent.appendChild(this.div);
 

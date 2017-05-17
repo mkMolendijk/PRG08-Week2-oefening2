@@ -5,4 +5,11 @@ class Utils {
             instance1.y < instance2.y + instance2.height &&
             instance1.height + instance1.y > instance2.y)
     }
+
+    public static getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
 }
