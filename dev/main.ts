@@ -28,7 +28,8 @@ class Game {
         this.rock.move();
 
         if (Utils.checkCollision(this.car, this.rock)) {
-               console.log("Biem");
+
+               console.log("Bieoooom");
                this.rock.setSpeed(5);
                this.car.setSpeed(0);
 
@@ -57,5 +58,5 @@ class Game {
 } 
 // load
 window.addEventListener("load", function() {
-    let g = Game.getInstance();
+    Game.getInstance();
 });

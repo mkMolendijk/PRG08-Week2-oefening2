@@ -16,7 +16,7 @@ var Game = (function () {
         this.car.move();
         this.rock.move();
         if (Utils.checkCollision(this.car, this.rock)) {
-            console.log("Biem");
+            console.log("Bieoooom");
             this.rock.setSpeed(5);
             this.car.setSpeed(0);
             this.score = 0;
@@ -40,5 +40,5 @@ var Game = (function () {
 }());
 // load
 window.addEventListener("load", function () {
-    var g = Game.getInstance();
+    Game.getInstance();
 });
